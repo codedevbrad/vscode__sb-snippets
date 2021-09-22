@@ -1,0 +1,46 @@
+{
+    "storybook string argument": {
+        "prefix": "sb-arg-string" , 
+        "body": [
+            "${1}: { " , 
+               "description: ' ' " , 
+               "table: {" , 
+                 "type: { summary: 'type: string' }" ,
+               "}," ,
+               "options: [ ]" ,
+               "control: { type: 'radio select text' }" , 
+            "}"
+        ] , 
+        "description": "easily create a string arg for the argTypes object."
+    } ,
+    
+    "storybook number argument": {
+      "prefix": "sb-arg-number" , 
+      "body": [
+          "${1}: { " , 
+             "description: ' ' " , 
+             "table: {" , 
+               "type: { summary: 'type: number' }" ,
+             "}," ,
+             "options: [ ]" ,
+             "control: { type: 'radio number' }" , 
+          "}"
+      ] , 
+      "description": "easily create a number arg for the argTypes object."
+    } ,
+
+    "storybook radio control": {
+        "prefix": "sb-control-radio" , 
+        "body": [
+            "control: { type: 'radio' } "
+        ] , 
+        "description": "create a radio control for controlling options."
+    } , 
+    "storybook select control": {
+      "prefix": "sb-control-sel" , 
+      "body": [
+          "control: { type: 'select' } "
+      ] , 
+      "description": "create a select control for controlling options."
+    } 
+}

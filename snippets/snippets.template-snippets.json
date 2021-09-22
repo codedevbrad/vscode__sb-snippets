@@ -1,0 +1,62 @@
+{
+    "storybook template" : {
+        "prefix": "sb-jsx" , 
+        "body": [
+            "import React from 'react';" ,
+            "import ${1:component} from '../app/index';" ,
+            "$0" ,
+            "export default {" ,
+                "title: 'Example/storybook'," ,
+                "component:  ${1:component} , " , 
+                "argTypes: {" , 
+                    "arg: {" ,
+                        "description: '' ," ,
+                        "table: {" ,
+                            "type: { summary: 'type: string' }," ,
+                        "}," ,
+                        "options: ['1' , '2' ] , " ,
+                        "control: { type: 'radio' } " ,
+                    "}" ,
+                "}",
+            "};",
+            "$0" ,
+            "const Template = (args) => < ${1:component} {...args} />;",
+
+            "export const Component = Template.bind({ });",
+
+            "Component.parameters = {",
+                "layout: 'centered'",
+            "}",
+
+            "Component.args = { };"
+        ] , 
+        "description": "creates storybook template"
+    } , 
+    "storybook template mdx": {
+        "prefix": "sb-mdx" , 
+        "body": [
+            "import { Meta, Story, Canvas } from '@storybook/addon-docs';",
+            "import ${1:} from './component';",
+
+            "$0" ,
+
+            "<Meta title=\"folder/component/readme\" />",
+
+            "$0" ,
+
+            "# ${1:component}",
+
+            "$0" ,
+
+            "```javascript",
+                    " example script ",
+            "```",
+
+            "$0" ,
+
+            "```javascript",
+                     "<Example />",
+            "```"
+        ]
+    }
+}
