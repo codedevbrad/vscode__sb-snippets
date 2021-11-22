@@ -10,11 +10,9 @@
         "Snippets"
     ],
     "scripts": {
-        "del":  "del-cli --force ./dev/sbsnippets",
-        "copy": "robocopy ./ /mir ./dev/sbsnippets /xd dev node_modules",
-        "open": "node dev/scripts/open" ,
-
-        "pack": "npm run open && npm run del && npm run copy"
+         "del": "del-cli --force ./extension",
+        "copy": "robocopy ./ /mir ./extension /xd dev node_modules",
+        "pack": "npm run del && npm run copy"
     },
     "contributes": {
         "snippets": [

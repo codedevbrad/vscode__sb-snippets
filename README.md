@@ -1,5 +1,12 @@
 # sbsnippets README
 
+## development
+ 
+ npm run pack
+
+ open - c/users/[name].vscode/extensions
+
+
 ## Features
 
 | command  | description |
