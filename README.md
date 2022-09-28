@@ -3,8 +3,14 @@
 ## development
  
  npm run pack
+ 
+ copy the extension folder that was generated.
 
  open - c/users/[name].vscode/extensions
+ 
+ paste extension.
+ 
+ restart vscode application and try the command in a jsx or js file.
 
 
 ## Features
